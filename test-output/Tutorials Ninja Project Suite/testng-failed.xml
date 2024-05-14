@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Tutorials Ninja Project Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.tutorialsninja.qa.listeners.MyListeners"/>
+  </listeners>
+  <test thread-count="5" name=".Tutorial Ninja Test(failed)">
+    <classes>
+      <class name="com.tutorialsninja.qa.testCases.search">
+        <methods>
+          <include name="teardown"/>
+          <include name="Setup"/>
+          <include name="verifyWithoutAnyProduct"/>
+          <include name="verifyWithInvalidProduct"/>
+          <include name="verifyWithValidProduct"/>
+        </methods>
+      </class> <!-- com.tutorialsninja.qa.testCases.search -->
+    </classes>
+  </test> <!-- .Tutorial Ninja Test(failed) -->
+</suite> <!-- Failed suite [Tutorials Ninja Project Suite] -->
